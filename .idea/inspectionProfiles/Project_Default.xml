@@ -1,0 +1,88 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="31">
+            <item index="0" class="java.lang.String" itemvalue="color" />
+            <item index="1" class="java.lang.String" itemvalue="face" />
+            <item index="2" class="java.lang.String" itemvalue="background-color:" />
+            <item index="3" class="java.lang.String" itemvalue="#4d45a3;" />
+            <item index="4" class="java.lang.String" itemvalue="background-color" />
+            <item index="5" class="java.lang.String" itemvalue="align" />
+            <item index="6" class="java.lang.String" itemvalue="ng-transition" />
+            <item index="7" class="java.lang.String" itemvalue="routerlink" />
+            <item index="8" class="java.lang.String" itemvalue="_ngcontent-sc167" />
+            <item index="9" class="java.lang.String" itemvalue="_ngcontent-sc142" />
+            <item index="10" class="java.lang.String" itemvalue="_ngcontent-sc151" />
+            <item index="11" class="java.lang.String" itemvalue="sbproscrollspy" />
+            <item index="12" class="java.lang.String" itemvalue="ngbdropdown" />
+            <item index="13" class="java.lang.String" itemvalue="ngbdropdowntoggle" />
+            <item index="14" class="java.lang.String" itemvalue="ngbdropdownmenu" />
+            <item index="15" class="java.lang.String" itemvalue="x-placement" />
+            <item index="16" class="java.lang.String" itemvalue="_ngcontent-sc136" />
+            <item index="17" class="java.lang.String" itemvalue="_ngcontent-sc232" />
+            <item index="18" class="java.lang.String" itemvalue="_ngcontent-sc120" />
+            <item index="19" class="java.lang.String" itemvalue="_ngcontent-sc137" />
+            <item index="20" class="java.lang.String" itemvalue="_ngcontent-sc220" />
+            <item index="21" class="java.lang.String" itemvalue="_ngcontent-sc219" />
+            <item index="22" class="java.lang.String" itemvalue="_ngcontent-sc130" />
+            <item index="23" class="java.lang.String" itemvalue="display" />
+            <item index="24" class="java.lang.String" itemvalue="sbwinview" />
+            <item index="25" class="java.lang.String" itemvalue="_ngcontent-sc153" />
+            <item index="26" class="java.lang.String" itemvalue="_ngcontent-sc152" />
+            <item index="27" class="java.lang.String" itemvalue="formcontrolname" />
+            <item index="28" class="java.lang.String" itemvalue="html" />
+            <item index="29" class="java.lang.String" itemvalue="screen_capture_injected" />
+            <item index="30" class="java.lang.String" itemvalue="noresize" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="27">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="app-root" />
+            <item index="7" class="java.lang.String" itemvalue="sbpro-toast-view" />
+            <item index="8" class="java.lang.String" itemvalue="sbw-overlay" />
+            <item index="9" class="java.lang.String" itemvalue="router-outlet" />
+            <item index="10" class="java.lang.String" itemvalue="sbw-site" />
+            <item index="11" class="java.lang.String" itemvalue="sbw-layout-site" />
+            <item index="12" class="java.lang.String" itemvalue="fa-icon" />
+            <item index="13" class="java.lang.String" itemvalue="sbw-banner" />
+            <item index="14" class="java.lang.String" itemvalue="sb-top-nav" />
+            <item index="15" class="java.lang.String" itemvalue="sbw-home" />
+            <item index="16" class="java.lang.String" itemvalue="sbpro-page-header" />
+            <item index="17" class="java.lang.String" itemvalue="sbpro-border" />
+            <item index="18" class="java.lang.String" itemvalue="sbpro-page-section" />
+            <item index="19" class="java.lang.String" itemvalue="sbw-product-cards" />
+            <item index="20" class="java.lang.String" itemvalue="sbw-quick-nav" />
+            <item index="21" class="java.lang.String" itemvalue="sbpro-dropdown" />
+            <item index="22" class="java.lang.String" itemvalue="sb-footer" />
+            <item index="23" class="java.lang.String" itemvalue="sbw-newsletter-signup" />
+            <item index="24" class="java.lang.String" itemvalue="div" />
+            <item index="25" class="java.lang.String" itemvalue="nav" />
+            <item index="26" class="java.lang.String" itemvalue="th" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="shop.mainapp.models.Basket.id" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
