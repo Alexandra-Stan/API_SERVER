@@ -15,6 +15,12 @@ def getTaxPayer(request):
     return Response(serializer.data)
 
 @api_view(['GET'])
+def getVAT(request):
+    vat = VAT.objects.all()
+    serializer = VATSerializer(vat, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
 def getDeclaration(request):
     declaration = Declaration.objects.all()
     serializer = DeclarationSerializer(declaration, many=True)
@@ -37,7 +43,7 @@ def postTaxPayer(request):
     data = request.data
     taxPayer = TaxPayer.objects.create(
         Name=data['Name'],
-        Surname=data['SurName'],
+        Surname=data['Surname'],
         LastName=data['LastName'],
         Adres=data['Adres'],
         Email=data['Email'],
@@ -54,9 +60,9 @@ def postTaxPayer(request):
 @api_view(['POST'])
 def postDeclaration(request):
     data = request.data
-    ar1 = VAT.objects.get(id=data['Procent'])
-    ar2 = TypeOfActivity.objects.get(id=data['Activity'])
-    ar3 = TaxPayer.objects.get(id=data['TaxPayer'])
+   # ar1 = VAT.objects.get(id=data["Procent"])
+    #ar2 = TypeOfActivity.objects.get(id=data['Activity'])
+   # ar3 = TaxPayer.objects.get(id=data['TaxPayer'])
     declaration = Declaration.objects.create(
         NameOfDeclaration=data['NameOfDeclaration'],
         Income=data['Income'],
@@ -68,11 +74,9 @@ def postDeclaration(request):
         Comment=data['Comment'],
         Draft=data['Draft'],
         LastNalog=data['LastNalog'],
-        Procent=ar1,
-        Activity=ar2,
-        TaxPayer=ar3
-
-
+        Procentet=data["Procentet"],
+        Activityy=data["Activityy"],
+        Taxpayerr=data["Taxpayerr"]
 
     )
     serializer = DeclarationSerializer(declaration, many=False)
@@ -80,10 +84,10 @@ def postDeclaration(request):
 
 
 @api_view(['PUT'])
-def putTaxPayer(request, pk):
+def putDeclaration(request, pk):
     data = request.data
-    taxPayer = TaxPayer.objects.get(pk=pk)
-    serializer = TaxPayerSerializer(instance=taxPayer, data=data)
+    declaration = Declaration.objects.get(pk=pk)
+    serializer = DeclarationSerializer(instance=declaration, data=data)
     if serializer.is_valid():
         serializer.save()
         return Response(serializer.data)
@@ -96,28 +100,6 @@ def deleteTaxPayer(request, pk):
     taxPayer = TaxPayer.objects.get(pk=pk)
     taxPayer.delete()
     return Response('Наогоплательщик удален!')
-
-@api_view(['POST'])
-def loginPage(request):
-    data = request.data
-    username = data['username']
-    password = data['password']
-
-    print(request.data, username, password)
-    if data['username'] in [None, ''] or data['password'] in [None, '']:
-        content = {'Error': 'Заполните все поля'}
-        return Response(content, status=status.HTTP_400_BAD_REQUEST)
-    else:
-        user = authenticate(request, username=username, password=password)
-
-        if user is not None:
-            login(request, user)
-            serializer = UserSerializer(user, many=False)
-            return Response(serializer.data)
-        else:
-            content = {'Error': 'No such User'}
-            return Response(content, status=status.HTTP_404_NOT_FOUND)
-
 
 @api_view(['PUT'])
 def putVAT(request, pk):

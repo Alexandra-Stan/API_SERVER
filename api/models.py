@@ -93,9 +93,9 @@ class Declaration(models.Model):
     DayOfDeclare = models.DateTimeField("Дата подачи")
     Comment = models.CharField("Комментарий", max_length=1000, blank=True)
     Draft = models.BooleanField("Черновик", default=False)
-    Procent = models.ForeignKey(VAT, on_delete=models.CASCADE, verbose_name="Процент")
-    Activity = models.ForeignKey(TypeOfActivity, on_delete=models.CASCADE, verbose_name="Вид деятельности")
-    TaxPayer = models.ForeignKey(TaxPayer, on_delete=models.CASCADE, verbose_name="Налогоплательщик")
+    Procentet = models.CharField("Procent", max_length=1000, blank=True)
+    Activityy = models.CharField("Activity", max_length=1000, blank=True)
+    Taxpayerr = models.CharField("TaxPayer", max_length=1000, blank=True)
     LastNalog = models.DecimalField(max_digits=15, decimal_places=2, verbose_name='Налог за прошлый период',
                                     default='100')
 
